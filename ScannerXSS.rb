@@ -1,5 +1,6 @@
 #!usr/bin/ruby
 #-----------------------------------------------------------------------------------------------
+#  Escaner XSS en Ruby. Sencillo y eficaz.
 #  Watir necesita especificar con qué navegador abrir los enlaces. Se puede modificar más abajo.
 #-----------------------------------------------------------------------------------------------
 require "watir"
