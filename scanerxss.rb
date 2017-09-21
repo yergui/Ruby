@@ -1,5 +1,7 @@
 #!usr/bin/ruby
-
+#-----------------------------------------------------------------------------------------------
+#  Watir necesita especificar con qué navegador abrir los enlaces. Se puede modificar más abajo.
+#-----------------------------------------------------------------------------------------------
 require "watir"
 
 puts "\n\nESCANER XSS v0.1\n\nIntroduce URL o IP:\n"
@@ -14,7 +16,7 @@ puts "\n+ Se atacará -> #{web}\n+ Usando el diccionario -> #{dic}\n+ Suerte...\
 	
 	File.open(dic,'r') do |file|
         	file.each do |line|
-        	browser = Watir::Browser.new :firefox
+        	browser = Watir::Browser.new :firefox #Cambia ':firefox' por el nombre del navegador que uses
         	browser.goto("#{web}" + line)
 	end
 end
